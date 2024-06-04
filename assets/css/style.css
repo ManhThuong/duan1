@@ -10,6 +10,7 @@ body {
 }
 .header .body-hearder {
   display: flex;
+  margin-top: 40px;
 }
 /*-------- thuộc tính chung------- */
 a {
@@ -31,8 +32,22 @@ nav {
 .nav ul {
   display: flex;
 }
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav a:hover {
+  color: black;
+  text-shadow: 1px 0 0 currentColor;
+}
+.btn-action {
+  display: block;
+  width: 144px;
+  height: 50px;
+}
 .btn-action .signup {
-  background-color: black;
-  color: white;
-  border-radius: 20%;
+  border-radius: 24.5px;
+  background: #171100;
+  color: #fff;
 }
