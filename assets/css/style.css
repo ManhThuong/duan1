@@ -10,7 +10,8 @@ body {
 }
 .header .body-hearder {
   display: flex;
-  margin-top: 40px;
+  margin-top: 44px;
+  align-items: center;
 }
 /*-------- thuộc tính chung------- */
 a {
@@ -23,6 +24,19 @@ a {
   margin-left: auto;
   margin-right: auto;
   /* căn giữa */
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  line-height: 50px;
+  padding: 0px 16px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
 }
 /*-------- thuộc tính chung------- */
 
@@ -41,13 +55,8 @@ nav {
   color: black;
   text-shadow: 1px 0 0 currentColor;
 }
-.btn-action {
-  display: block;
-  width: 144px;
+header .signup {
+  min-width: 144px;
   height: 50px;
-}
-.btn-action .signup {
-  border-radius: 24.5px;
-  background: #171100;
-  color: #fff;
+  flex-shrink: 0;
 }
