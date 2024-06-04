@@ -17,6 +17,7 @@ a {
 }
 .main-content {
   width: 1170px;
+  min-width: calc(100% - 48px);
   /* căn giữa */
   margin-left: auto;
   margin-right: auto;
@@ -29,4 +30,9 @@ nav {
 }
 .nav ul {
   display: flex;
+}
+.btn-action .signup {
+  background-color: black;
+  color: white;
+  border-radius: 20%;
 }
