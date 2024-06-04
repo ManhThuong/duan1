@@ -11,7 +11,22 @@ body {
 .header .body-hearder {
   display: flex;
 }
-
+/*-------- thuộc tính chung------- */
 a {
   text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  /* căn giữa */
+  margin-left: auto;
+  margin-right: auto;
+  /* căn giữa */
+}
+/*-------- thuộc tính chung------- */
+
+nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
 }
