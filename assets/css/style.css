@@ -56,9 +56,25 @@ a {
   font-weight: 600;
   border-radius: 24.5px;
   background: #171100;
+  cursor: pointer;
+  border: none;
 }
 .btn:hover {
   opacity: 80%;
+}
+/* Ngắt 1 dòng khi ký tự quá dài */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* ngắt 2 dòng khi ký tự quá dài */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
 }
 /*-------- thuộc tính chung------- */
 
@@ -264,4 +280,116 @@ header .signup {
 .popular .control {
   display: flex;
   gap: 18px;
+}
+
+.popular .course-list {
+  display: flex;
+  gap: 18px;
+  margin-top: 55px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+.course-item .thumb {
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
+.popular h3 {
+  color: #171100;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+.popular .course-item .value,
+.popular .course-item .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular .course-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular .course-item .info {
+  padding: 22px;
+}
+
+.popular .course-list .btn:hover {
+  background-color: var(--primary-color);
+}
+
+.popular .course-item {
+  flex: 1;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+.popular .course-item .value {
+  margin-left: 6px;
+  color: #fea31b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.popular .course-item a {
+  color: #000000;
+}
+/* feedback */
+.feedback {
+  margin-top: 200px;
+}
+.feedback .feedback-body {
+  display: flex;
+  width: 1440px;
+  height: 380px;
+  background: #2e2100;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hocvien-fb {
+  width: 740px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px; /* 153.846% */
+}
+.fb-right {
+  margin-top: 124px;
+  margin-left: 350px;
+}
+.fb-left {
+  margin-top: 96px;
+  margin-left: 135px;
+}
+.fb-left .name {
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 141.667% */
+}
+.fb-left .class-name {
+  color: #bfbcb2;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
 }
