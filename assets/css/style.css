@@ -524,6 +524,8 @@ line-height: 26px; /* 185.714% */
 }
 .main-footer .fa-brands{
 color: white;
+font-size: 15px;
+margin-right: 18px;
 }
 
 .foot-gachchan{
